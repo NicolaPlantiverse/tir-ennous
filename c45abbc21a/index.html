@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TIR · Ennous — Board Edition</title>
+<title>TIR · Ennous</title>
 <style>
 :root{
   --bg:#06080a; --bg2:#0a0d11; --panel:rgba(255,255,255,.035); --panel2:rgba(255,255,255,.06);
@@ -45,7 +45,7 @@ h2{font-size:clamp(28px,4vw,46px);font-weight:700;letter-spacing:-.025em;line-he
 @media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important;transition:none!important}}
 
 #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:130px;position:relative;overflow:hidden}
-.hero-net{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.55;pointer-events:none}
+.hero-net{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.72;pointer-events:none}
 #hero .hero-inner{position:relative;z-index:1;width:100%}
 #hero .hero-brand{font-size:clamp(28px,3.4vw,42px);font-weight:800;letter-spacing:.09em;color:var(--txt);margin-bottom:14px;line-height:1}
 .hero-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:56px}
@@ -211,6 +211,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   nav .links a{padding:6px 8px;font-size:11px;white-space:nowrap}
   .demo-badge{display:none}
 }
+/*GLOW*/.hstat,.obj,.mi,.tract-card,.rw-panel,.q{transition:border-color .25s,box-shadow .25s,transform .25s}.hstat:hover,.obj:hover,.mi:hover,.tract-card:hover,.rw-panel:hover{border-color:rgba(255,255,255,.34)!important;box-shadow:0 0 0 1px rgba(255,255,255,.16),0 0 26px -8px rgba(120,210,170,.6)}
 </style>
 </head>
 <body>
@@ -234,18 +235,18 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <canvas id="heroNet" class="hero-net"></canvas>
   <div class="hero-inner">
   <div class="hero-brand rv">ENNOUS</div>
-  <div class="kicker rv d1">Meta-Intelligence · prepared for the TIR board</div>
+  <div class="kicker rv d1">Meta-Intelligence · for the TIR group</div>
   <h1 class="rv d1">841,000 acres.<br>One measured intelligence.</h1>
   <p class="lead rv d2" style="margin-top:24px">
     For a working-forest portfolio, value is increasingly a function of the <strong>quality of its proof</strong>.
-    Ennous renders estimates as <strong class="gr">measured, calibrated, auditable numbers</strong> — carbon,
+    Ennous renders estimates as <strong class="gr">measured, calibrated, auditable numbers</strong> — timber yield,
     biodiversity, climate risk — and composes the right analysis for each question on its own. Not another AI tool:
     a self-governing measurement layer, with calibrated, empirically-tracked coverage and an audit trail.
   </p>
   <div class="hero-stats rv d3">
     <div class="hstat"><div class="n gr">841k</div><div class="l">acres of sustainable working forest · 15 US states <span class="bdg real">TIR 2025</span></div></div>
     <div class="hstat"><div class="n">$2.2B</div><div class="l">assets under management ($1.7B US · $497M Europe)</div></div>
-    <div class="hstat"><div class="n cy">72.7M</div><div class="l">tCO₂e carbon stock across merchantable area</div></div>
+    <div class="hstat"><div class="n cy">8</div><div class="l">revenue streams · timber-led value chain (pulp → sawtimber as stands mature)</div></div>
     <div class="hstat"><div class="n go">~90</div><div class="l">analytical engines · gating ignites only the optimal subset (~1 in 10) per decision</div></div>
     <div class="hstat"><div class="n">SHA-256</div><div class="l">proof chain on every measure · TNFD / Art.9 ready</div></div>
   </div>
@@ -298,7 +299,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
     A sensitivity slider recomputes one fixed formula. This does not. Change the <strong>objective</strong> and a patent-pending
     layer <strong>composes its own analysis pipeline</strong> (L4-bis), <strong class="gr">ignites only the optimal
     subset</strong> of ~90 engines and idles the rest, so <strong>intelligence runs at a fraction of the cost</strong> while
-    <strong>confidence stays measured</strong>. Pick a board objective.
+    <strong>confidence stays measured</strong>. Pick an objective.
   </p>
   <div class="obj-tabs rv d2" id="objTabs"></div>
   <div class="rw-stage rv d3">
@@ -347,7 +348,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
     confidence, and a proof chain.
   </p>
   <div class="mi-grid rv d2" id="miGrid"></div>
-  <p class="disc rv d3" style="max-width:none"><b>Why a board cares.</b> The first surfaces a portfolio risk you cannot
+  <p class="disc rv d3" style="max-width:none"><b>Why it matters.</b> The first surfaces a portfolio risk you cannot
   see by summing tract reports; the second means the system maintains itself, lowering model-risk; the third lowers the
   marginal cost of intelligence on every new acquisition. Patterns illustrative, mechanism real (ML6 fingerprint transfer
   &amp; ML7 drift/meta-pattern, reduced to practice).</p>
@@ -440,14 +441,14 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
 
 <footer>
   <div class="fin">
-    <p><b>TIR · Ennous — Board Edition.</b> Demonstration prepared for the board of Timberland Investment
+    <p><b>TIR · Ennous.</b> Demonstration prepared for Timberland Investment
     Resources. Firm references (841,000 acres / 15 states; $2.2B AUM; 72.7M tCO₂e; 8.5 tCO₂e/acre/yr; SFI 99.8%; TNFD 2025;
     Article 9; Winged Biodiversity™) are drawn from TIR's 2025 Sustainability Report and the SF&amp;NC Fund 2 (TIR-provided)
     factsheet. Tract telemetry, gating scores, meta-layer insights and disclosures are <b>simulated from origin</b> and
     reproduce the designed behaviour of the system, per the deposited architecture (patent 11.E2118.12.IT.7, pending, + 5
     technical extensions, candidate). Nothing herein is a certified measure, financial advice or an offer. The platform
     measures and estimates; valuations and decisions remain with the firm's governing bodies.</p>
-    <div class="sig">ENNOUS · Meta-Intelligence Lab<br>Plant &amp; Geo-Driven Systems<br><span style="color:var(--txt3)">Board Edition v1.0 · 2026</span></div>
+    <div class="sig">ENNOUS · Meta-Intelligence Lab<br>Plant &amp; Geo-Driven Systems<br><span style="color:var(--txt3)">v1.0 · 2026</span></div>
   </div>
 </footer>
 
@@ -688,7 +689,7 @@ function generateDisclosure(){
 selTract(0); setObj(0);
 const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');ro.unobserve(e.target);}}),{threshold:0,rootMargin:"0px 0px 120px 0px"});
 /* hero network backdrop — many models; the gating ignites only the optimal subset */
-(function(){const cv=document.getElementById('heroNet');if(!cv)return;const ctx=cv.getContext('2d');const COLS=['#3fae6a','#4cc3d9','#c9a23f','#9b7fd4'];let W,H,DPR,nodes=[],ignited=new Set(),igniteAt=-9999;const PERIOD=2600;function size(){DPR=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*DPR;cv.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);}function init(){size();const N=Math.min(94,Math.round(W*H/13000));nodes=[];for(let i=0;i<N;i++)nodes.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.14,vy:(Math.random()-.5)*.14,c:COLS[i%COLS.length],r:Math.random()*1.5+.6});}function pick(){ignited=new Set();const k=Math.max(4,Math.round(nodes.length*0.12));const idx=[...nodes.keys()];for(let i=idx.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=idx[i];idx[i]=idx[j];idx[j]=t;}idx.slice(0,k).forEach(i=>ignited.add(i));}function step(){const now=performance.now();if(now-igniteAt>PERIOD){pick();igniteAt=now;}const glow=Math.sin(Math.min(1,(now-igniteAt)/PERIOD)*Math.PI);ctx.clearRect(0,0,W,H);for(const n of nodes){n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n.vy*=-1;}for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){const a=nodes[i],b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);if(d<118){const lit=(ignited.has(i)&&ignited.has(j))?glow:0;ctx.globalAlpha=(1-d/118)*(.13+lit*.5);ctx.strokeStyle=a.c;ctx.lineWidth=.6+lit*.9;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}}for(let i=0;i<nodes.length;i++){const n=nodes[i],on=ignited.has(i),g=on?glow:0;ctx.globalAlpha=.5+g*.5;ctx.fillStyle=n.c;ctx.beginPath();ctx.arc(n.x,n.y,n.r*(1+g*1.3),0,7);ctx.fill();ctx.globalAlpha=on?.10+g*.22:.08;ctx.beginPath();ctx.arc(n.x,n.y,n.r*(4.5+g*5),0,7);ctx.fill();}ctx.globalAlpha=1;requestAnimationFrame(step);}init();requestAnimationFrame(step);addEventListener('resize',init);})();
+(function(){const cv=document.getElementById('heroNet');if(!cv)return;const ctx=cv.getContext('2d');const COLS=['#3fae6a','#4cc3d9','#c9a23f','#9b7fd4'];let W,H,DPR,nodes=[],ignited=new Set(),igniteAt=-9999;const PERIOD=2600;function size(){DPR=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*DPR;cv.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);}function init(){size();const N=Math.min(94,Math.round(W*H/8500));nodes=[];for(let i=0;i<N;i++)nodes.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.14,vy:(Math.random()-.5)*.14,c:COLS[i%COLS.length],r:Math.random()*1.5+.6});}function pick(){ignited=new Set();const k=Math.max(4,Math.round(nodes.length*0.12));const idx=[...nodes.keys()];for(let i=idx.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=idx[i];idx[i]=idx[j];idx[j]=t;}idx.slice(0,k).forEach(i=>ignited.add(i));}function step(){const now=performance.now();if(now-igniteAt>PERIOD){pick();igniteAt=now;}const glow=Math.sin(Math.min(1,(now-igniteAt)/PERIOD)*Math.PI);ctx.clearRect(0,0,W,H);for(const n of nodes){n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n.vy*=-1;}for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){const a=nodes[i],b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);if(d<118){const lit=(ignited.has(i)&&ignited.has(j))?glow:0;ctx.globalAlpha=(1-d/118)*(.13+lit*.5);ctx.strokeStyle=a.c;ctx.lineWidth=.6+lit*.9;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}}for(let i=0;i<nodes.length;i++){const n=nodes[i],on=ignited.has(i),g=on?glow:0;ctx.globalAlpha=.5+g*.5;ctx.fillStyle=n.c;ctx.beginPath();ctx.arc(n.x,n.y,n.r*(1+g*1.3),0,7);ctx.fill();ctx.globalAlpha=on?.10+g*.22:.08;ctx.beginPath();ctx.arc(n.x,n.y,n.r*(4.5+g*5),0,7);ctx.fill();}ctx.globalAlpha=1;requestAnimationFrame(step);}init();requestAnimationFrame(step);addEventListener('resize',init);})();
 document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
 let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(drawUS,180);});
 </script>
