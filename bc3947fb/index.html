@@ -229,6 +229,8 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
 /*ML-AMAZING*/.mi{position:relative;overflow:hidden;transition:border-color .25s,box-shadow .25s,transform .25s}.mi::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--violet),transparent);transform:translateX(-100%);animation:miScan 4.2s ease-in-out infinite}@keyframes miScan{0%{transform:translateX(-100%)}55%,100%{transform:translateX(100%)}}.mi:nth-child(2)::before{background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation-delay:1.3s}.mi:nth-child(3)::before{background:linear-gradient(90deg,transparent,var(--forest),transparent);animation-delay:2.6s}.mi:hover{border-color:var(--line2);transform:translateY(-4px);box-shadow:0 0 0 1px var(--line2),0 0 34px -10px rgba(155,127,212,.55)}.mi .conf .c b{text-shadow:0 0 18px currentColor}.proof-btn{transition:border-color .2s,box-shadow .2s,color .2s}.proof-btn:hover{border-color:var(--forest);box-shadow:0 0 20px -6px var(--forest);color:var(--forest)}
 /*MEAS-DISC-AMAZING*/.em{position:relative;transition:border-color .25s,box-shadow .25s,transform .25s}.em:hover{border-color:var(--forest);transform:translateY(-3px);box-shadow:0 0 0 1px var(--forest),0 0 30px -10px var(--forest)}.em .after{text-shadow:0 0 20px rgba(63,174,106,.55)}.em .arrow{animation:emArrow 2.2s ease-in-out infinite}@keyframes emArrow{0%,100%{opacity:.55;transform:translateY(0)}50%{opacity:1;transform:translateY(3px)}}.gen-btn{transition:box-shadow .25s,transform .2s}.gen-btn:hover{box-shadow:0 0 26px -8px var(--forest);transform:translateY(-2px)}.gen-wrap{transition:box-shadow .3s,border-color .3s}.gen-wrap:hover{border-color:var(--line2);box-shadow:0 0 34px -16px rgba(63,174,106,.5)}.leap .h{text-shadow:0 0 14px rgba(76,195,217,.5)}
 /*BATCH1*/.endcap h3{font-size:clamp(21px,2.5vw,30px)}.endcap p{font-size:15.5px;line-height:1.66}.endcap{transition:box-shadow .3s}.endcap:hover{box-shadow:0 0 44px -20px rgba(63,174,106,.55)}.hstat{padding:28px 22px;transition:transform .25s,box-shadow .25s,background .25s}.hstat .n{font-size:34px}.hstat .l{font-size:12.5px;color:var(--txt2);line-height:1.5}.hstat:hover{transform:scale(1.045);background:var(--bg2);box-shadow:0 0 34px -10px rgba(120,210,170,.55);position:relative;z-index:2}.disc{font-size:12.5px}.gen-wrap.done{border-color:var(--forest)!important;box-shadow:0 0 0 1px var(--forest),0 0 54px -16px var(--forest)}
+/*BATCH2*/#overview .hero-stats{grid-template-columns:repeat(3,1fr)}#overview .hstat .n{font-size:38px}@media(min-width:1100px){.lead{font-size:19.5px}.q p{font-size:16px}#problem .q span{font-size:13px}.mi p{font-size:13.5px}.mi h3{font-size:18px}.disc{font-size:13px}.tract-card .meta{font-size:13.5px}.tkv{font-size:13.5px}.endcap p{font-size:16.5px}.obj p{font-size:12px}.obj h4{font-size:14.5px}}
+/*MN-OBJ*/.mn-hint{font-size:11.5px;color:var(--txt3);letter-spacing:.03em;margin-bottom:9px}.mn-obj{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}.mn-ob{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:8px 13px;font-size:12px;color:var(--txt2);cursor:pointer;font-family:inherit;transition:border-color .2s,box-shadow .2s,color .2s,transform .2s}.mn-ob:hover{border-color:var(--line2);color:var(--txt);transform:translateY(-1px)}.mn-ob.sel{border-color:var(--forest);color:var(--forest);box-shadow:0 0 0 1px var(--forest),0 0 20px -8px var(--forest)}
 </style>
 </head>
 <body>
@@ -254,8 +256,8 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <div class="hero-brand rv">TIR · ENNOUS LAB</div>
   <div class="kicker rv d1">Meta-Intelligence</div>
   <h1 class="rv d1">841,000 acres.<br>One measured intelligence.</h1>
-  <p class="lead sub rv d2" style="margin-top:22px;max-width:600px">Estimates become measures — the Whole-Forest, calibrated and proven per stand.</p>
-  <div class="scroll-hint rv d3">Explore</div>
+  <p class="lead sub rv d2" style="margin-top:22px;max-width:600px">Estimates become measures, the Whole-Forest, calibrated and proven per stand.</p>
+  <a href="#problem" class="scroll-hint rv d3">Explore</a>
   </div>
 </section>
 
@@ -263,16 +265,16 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
 <section id="problem">
   <div class="kicker rv">The problem</div>
   <h2 class="rv d1">AI is arriving in every portfolio.<br>Few can govern it.</h2>
-  <p class="lead rv d2">Adopting a model is easy; governing it is hard. Before an LP, a regulator or a field trusts a number, a handful of questions decide everything — and most organisations, however expert in their own domain, cannot answer one of them.</p>
+  <p class="lead rv d2">Adopting a model is easy; governing it is hard. Before an LP, a regulator or a field trusts a number, a handful of questions decide everything, and most organisations, however expert in their own domain, cannot answer one of them.</p>
     <div class="qgrid rv d2">
-    <div class="q"><div class="qn">Q1</div><p>Which model — and why this one?</p><span>Is it the best model for <em>this</em> decision, or simply the one already installed? Every question deserves the analysis that fits it, not a default.</span></div>
-    <div class="q"><div class="qn">Q2</div><p>When is it even worth it?</p><span>Not every decision needs a heavy model. When does AI add value over its cost and risk — and when is the simplest method the honest one?</span></div>
-    <div class="q"><div class="qn">Q3</div><p>All the signal, or the convenient part?</p><span>Is every useful source captured and brought to one comparable grammar — or only the data that was easy to reach?</span></div>
-    <div class="q"><div class="qn">Q4</div><p>Out of the black box?</p><span>Can the reasoning be opened and read, step by step — or is trusting the output an act of faith?</span></div>
-    <div class="q"><div class="qn">Q5</div><p>Efficiency and error — measured?</p><span>How much compute, and how much uncertainty around the answer — quantified and tracked, not assumed?</span></div>
-    <div class="q"><div class="qn">Q6</div><p>Who governs the models — and what emerges?</p><span>When many models run, what governs them? And what pattern surfaces across them that no single model — and no human query — could reach alone?</span></div>
+    <div class="q"><div class="qn">Q1</div><p>Which model, and why this one?</p><span>Is it the best model for <em>this</em> decision, or simply the one already installed? Every question deserves the analysis that fits it, not a default.</span></div>
+    <div class="q"><div class="qn">Q2</div><p>When is it even worth it?</p><span>Not every decision needs a heavy model. When does AI add value over its cost and risk, and when is the simplest method the honest one?</span></div>
+    <div class="q"><div class="qn">Q3</div><p>All the signal, or the convenient part?</p><span>Is every useful source captured and brought to one comparable grammar, or only the data that was easy to reach?</span></div>
+    <div class="q"><div class="qn">Q4</div><p>Out of the black box?</p><span>Can the reasoning be opened and read, step by step, or is trusting the output an act of faith?</span></div>
+    <div class="q"><div class="qn">Q5</div><p>Efficiency and error, measured?</p><span>How much compute, and how much uncertainty around the answer, quantified and tracked, not assumed?</span></div>
+    <div class="q"><div class="qn">Q6</div><p>Who governs the models, and what emerges?</p><span>When many models run, what governs them? And what pattern surfaces across them that no single model, and no human query, could reach alone?</span></div>
   </div>
-  <p class="turn rv d3">Ennous is the brain that governs the brains — it chooses among models, gathers the signal, opens the reasoning, quantifies efficiency and error, and leaves a proof. <b>By construction.</b> Then it applies that where measurement is hardest: the working forest.</p>
+  <p class="turn rv d3">Ennous is the brain that governs the brains, it chooses among models, gathers the signal, opens the reasoning, quantifies efficiency and error, and leaves a proof. <b>By construction.</b> Then it applies that where measurement is hardest: the working forest.</p>
 </section>
 
 <!-- OVERVIEW -->
@@ -280,15 +282,15 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <div class="kicker rv">The portfolio in one view</div>
   <p class="lead rv d2">
     For a working-forest portfolio, value is increasingly a function of the <strong>quality of its proof</strong>.
-    Ennous renders estimates as <strong class="gr">measured, calibrated, auditable numbers</strong> — timber yield,
-    biodiversity, climate risk — and composes the right analysis for each question on its own. Not another AI tool:
+    Ennous renders estimates as <strong class="gr">measured, calibrated, auditable numbers</strong>, timber yield,
+    biodiversity, climate risk, and composes the right analysis for each question on its own. Not another AI tool:
     a self-governing measurement layer, with calibrated, empirically-tracked coverage and an audit trail.
   </p>
   <div class="hero-stats rv d3">
     <div class="hstat"><div class="n gr">841k</div><div class="l">acres of sustainable working forest · 15 US states <span class="bdg real">TIR 2025</span></div></div>
     <div class="hstat"><div class="n">$2.2B</div><div class="l">assets under management ($1.7B US · $497M Europe)</div></div>
     <div class="hstat"><div class="n cy">5</div><div class="l">Whole-Forest revenue drivers · timber-led (pulp → sawtimber as stands mature)</div></div>
-    <div class="hstat"><div class="n go">~90</div><div class="l">analytical engines · gating ignites only the optimal subset (~1 in 10) per decision</div></div>
+    <div class="hstat"><div class="n go">~90</div><div class="l">intelligence engines <b>potentially activatable</b> · ~1 in 10 ignited per decision · figure estimated from an average of high-complexity projects</div></div>
     <div class="hstat"><div class="n">SHA-256</div><div class="l">proof chain on every measure · TNFD / Art.9 ready</div></div>
   </div>
   <div class="disc rv d3">
@@ -310,7 +312,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <h2 class="rv d1">Tracts apart. Signals comparable.</h2>
   <p class="lead rv d2">
     841,000 acres across 15 states, a strong primary focus on the U.S. South. Today each tract lives in its own
-    silo — inventory, GIS, carbon estimates, certification records. Here they converge in a single working view, with
+    silo, inventory, GIS, carbon estimates, certification records. Here they converge in a single working view, with
     a common grammar: value, unit, provenance, uncertainty, time. Select a region.
   </p>
   <div class="map-wrap rv d2">
@@ -326,14 +328,14 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   </div>
   <p class="disc rv d3" style="max-width:none"><b>On the data.</b> Acreage, AUM, carbon stock, certification and risk
   figures are from TIR documents (2025 Sustainability Report &amp; Fund 2 factsheet). Tract-level positions and per-tract metrics
-  are <span class="bdg sim">simulated from origin</span> — distributed across the real regions and totals — to show the
+  are <span class="bdg sim">simulated from origin</span>, distributed across the real regions and totals, to show the
   designed behaviour. The platform connects to TIR's real inventory and GIS without architectural change.</p>
 </section>
 
 <!-- REASONING WINDOW -->
 <section id="reasoning">
   <div class="kicker rv">02 · The Reasoning Window</div>
-  <h2 class="rv d1">You don't ask «what if».<br>You change the objective — and the intelligence recomposes itself.</h2>
+  <h2 class="rv d1">You don't ask «what if».<br>You change the objective, and the intelligence recomposes itself.</h2>
   <p class="lead rv d2">
     A sensitivity slider recomputes one fixed formula. This does not. Change the <strong>objective</strong> and a patent-pending
     layer <strong>composes its own analysis pipeline</strong> (L4-bis), <strong class="gr">ignites only the optimal
@@ -347,9 +349,9 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
       <div id="engGrid"></div>
       <div class="rw-formula"><span>E(M<sub>i</sub>) = α·Acc − β·Lat − γ·En + δ·Rob &nbsp;·&nbsp; budget-constrained selection</span><span class="pat">PATENT PENDING 11.E2118.12.IT.7 · +5 CIP</span></div>
       <div class="rw-metrics">
-        <div class="rwm"><div class="v" id="mCycle">—</div><div class="k">analysis cycle</div></div>
-        <div class="rwm"><div class="v go" id="mSave">—</div><div class="k">compute saved</div></div>
-        <div class="rwm"><div class="v gr" id="mCov">—</div><div class="k">conformal coverage</div></div>
+        <div class="rwm"><div class="v" id="mCycle">,</div><div class="k">analysis cycle</div></div>
+        <div class="rwm"><div class="v go" id="mSave">,</div><div class="k">compute saved</div></div>
+        <div class="rwm"><div class="v gr" id="mCov">,</div><div class="k">conformal coverage</div></div>
       </div>
       <div class="rw-autogen" id="autogen"></div>
     </div>
@@ -367,9 +369,11 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <h2 class="rv d1">Every node is a network.</h2>
   <div class="metanet rv d2">
     <div class="mh"><span class="t">Meta-net · every node is a network</span><span class="c" id="mnLabel"></span></div>
+    <div class="mn-hint">Change the objective, the network recomposes, and the number of engines with it:</div>
+    <div class="mn-obj" id="mnObj"></div>
     <canvas id="mnCanvas"></canvas>
     <div class="mn-tip" id="mnTip"></div>
-    <p class="mn-cap"><b>How to read this.</b> Each node is an analytical engine — and each is itself a network: the inner
+    <p class="mn-cap"><b>How to read this.</b> Each node is an analytical engine, and each is itself a network: the inner
     mesh is visible in transparency. The path runs from the data (left), passes only through the engines the gating
     ignites for this objective, converges in meta-fusion and reaches the Decision Hub. This is meta-intelligence: not a
     bigger model, but the governed composition of many specialist models. Hover a node.</p>
@@ -378,18 +382,18 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <details class="disc rv d3" style="max-width:none"><summary style="cursor:pointer;color:var(--forest);font-weight:600">What you are watching</summary>
     <div style="margin-top:8px">The catalogue holds ~90 physics-consistent and data-driven engines. <b>L4-bis</b> evaluates the valid
     pipeline compositions (a grammar reduces the search from O(2^N) to a few hundred), scores each, and runs only the best.
-    The objective change re-composes the machine — different engines, different pipeline, different cost — with coverage held.
-    <b>What runs today</b> is the orchestration layer — budget-constrained gating, conditional-conformal calibration, hash-chained audit and the ML6/ML7 meta-layer — together with the biodiversity and multispectral engine family already in production (78 indices, CNR &amp; Sapienza). The forest-carbon engines shown above are composed from the same deposited architecture and instantiated on TIR's inventory during the pilot, not assumed pre-built.
+    The objective change re-composes the machine, different engines, different pipeline, different cost, with coverage held.
+    <b>What runs today</b> is the orchestration layer, budget-constrained gating, conditional-conformal calibration, hash-chained audit and the ML6/ML7 meta-layer, together with the biodiversity and multispectral engine family already in production (78 indices, CNR &amp; Sapienza). The forest-carbon engines shown above are composed from the same deposited architecture and instantiated on TIR's inventory during the pilot, not assumed pre-built.
     Figures simulated, consistent with the deposited architecture's measured behaviour (~80–90% compute saved, coverage near 0.90).</div></details>
 </section>
 
 <!-- META-LAYER -->
 <section id="metalayer">
   <div class="kicker rv">03 · The Meta-Layer speaks</div>
-  <h2 class="rv d1">Conclusions no single model — and no human query — could reach.</h2>
+  <h2 class="rv d1">Conclusions no single model, and no human query, could reach.</h2>
   <p class="lead rv d2">
     These do not come out of a model. They come from watching <strong>which models win, and how that changes over
-    time</strong> — meta-knowledge over the portfolio. Each carries the engine subset that produced it, a calibrated
+    time</strong>, meta-knowledge over the portfolio. Each carries the engine subset that produced it, a calibrated
     confidence, and a proof chain.
   </p>
   <div class="mi-grid rv d2" id="miGrid"></div>
@@ -404,8 +408,8 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <div class="kicker rv">04 · From estimate to measure</div>
   <h2 class="rv d1">The number an LP can defend.</h2>
   <p class="lead rv d2">
-    Across the Whole-Forest, value turns on stand-level decisions — growth and yield, when to thin, when to harvest, and into which product as stands mature from pulpwood to sawtimber. The platform renders each as a
-    <strong class="gr">measure</strong> — satellite-and-ground fusion, explicit uncertainty, audit trail — not a table estimate. The same engine makes carbon, one of five Whole-Forest drivers, equally defensible, and fills the one pillar of the Winged Biodiversity™ Program still maturing: <strong>Measuring &amp; Monitoring</strong>.
+    Across the Whole-Forest, value turns on stand-level decisions, growth and yield, when to thin, when to harvest, and to which product as stands mature from pulpwood to sawtimber. The platform renders each as a
+    <strong class="gr">measure</strong>, satellite-and-ground fusion, explicit uncertainty, audit trail, not a table estimate. The same engine makes carbon, one of five Whole-Forest drivers, equally defensible, and fills the one pillar of the Winged Biodiversity™ Program still maturing: <strong>Measuring &amp; Monitoring</strong>.
   </p>
   <div class="em-grid rv d2">
     <div class="em">
@@ -413,14 +417,14 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
       <div class="before">inventory table <span style="font-size:13px">· estimate</span></div>
       <div class="arrow">↓ in a pilot, measured by the engine</div>
       <div class="after">per stand <small>· calibrated band · provenance · drift-watched</small></div>
-      <p>When to thin, when to harvest, into which product (pulpwood → sawtimber) — the decisions behind the 8–10% target return and 3% cash yield, each rendered measurable rather than tabled. <span class="bdg val">to validate on TIR data</span></p>
+      <p>When to thin, when to harvest, to which product (pulpwood → sawtimber), the decisions behind the 8–10% target return and 3% cash yield, each rendered measurable rather than tabled. <span class="bdg val">to validate on TIR data</span></p>
     </div>
     <div class="em">
       <h4>Carbon · one of five drivers</h4>
       <div class="before">8.5 tCO₂e/acre/yr <span style="font-size:13px">· estimate (Winrock)</span></div>
       <div class="arrow">↓ engine layer</div>
       <div class="after">8.4 <small>tCO₂e · band 7.9–8.9 · illustrative</small></div>
-      <p>Carbon is ~26K acres of projects today; the same engine makes it a measure with per-stand provenance — what registries and the EU Taxonomy require, if and when TIR scales it. The Winged Biodiversity™ M&amp;M pillar is filled the same way. <span class="bdg sim">simulated from origin</span></p>
+      <p>Carbon is ~26K acres of projects today; the same engine makes it a measure with per-stand provenance, what registries and the EU Taxonomy require, if and when TIR scales it. The Winged Biodiversity™ M&amp;M pillar is filled the same way. <span class="bdg sim">simulated from origin</span></p>
     </div>
   </div>
 </section>
@@ -431,8 +435,8 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <h2 class="rv d1">An evidence packet, not a slide deck.</h2>
   <p class="lead rv d2">
     TIR aligned with <strong>TNFD</strong> in 2025 and the Fund is <strong>SFDR Article 9</strong>, managed by TIR Europe (FCA-regulated) under AIFMD. The same proof chain
-    that backs each measure <strong class="gr">compiles the disclosure itself</strong> — TNFD's LEAP structure and the
-    Article 9 indicators — with the final hash as a filing signature. The portfolio already rests on a third-party certification spine — <strong>99.8% of acres independently certified</strong> (SFI · PwC audit, Dec 2025).
+    that backs each measure <strong class="gr">compiles the disclosure itself</strong>, TNFD's LEAP structure and the
+    Article 9 indicators, with the final hash as a filing signature. The portfolio already rests on a third-party certification spine, <strong>99.8% of acres independently certified</strong> (SFI · PwC audit, Dec 2025). The underlying measurement method is validated with <strong>CNR-IAC</strong>, a body of Italy's national research council (CNR), relevant for independent audit.
   </p>
   <div class="gen-wrap rv d2">
     <div class="gen-top">
@@ -443,7 +447,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
     <div class="gen-sig" id="genSig"></div>
   </div>
   <p class="disc rv d3" style="max-width:none">Demonstration with simulated data; the SHA-256 digests are computed live in
-  the browser, step by step. In production the register is immutable, signed and time-stamped — an auditor or an LP retraces
+  the browser, step by step. In production the register is immutable, signed and time-stamped, an auditor or an LP retraces
   any figure without privileged access. A tamper-evident hash chain, not a blockchain.</p>
 </section>
 
@@ -453,7 +457,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <h2 class="rv d1">The platform measures.<br>The decisions stay with TIR.</h2>
   <p class="lead rv d2">
     It measures, estimates, flags and documents. It does not allocate capital, price acquisitions or replace the
-    investment committee. It does not replace TIR's process — it renders it <strong>usable, recurring and verifiable</strong>.
+    investment committee. It does not replace TIR's process, it renders it <strong>usable, recurring and verifiable</strong>.
   </p>
   <div class="gov rv d2">
     <div class="gcol"><h3>The platform does</h3><div class="sub">working measurement layer</div>
@@ -585,14 +589,14 @@ function selTract(i){tSel=i;const t=TRACTS[i],col=REG[t.r];
 /* ===== REASONING WINDOW ===== */
 const FAM=['','g','c','v']; const ENGN=[]; for(let i=0;i<90;i++)ENGN.push(FAM[(i*7)%4]);
 const OBJ=[
- {id:'carbon',ic:'◷',name:'Timber value & growth',desc:'Stand growth, yield and product value made measurable — carbon derived.',
+ {id:'carbon',ic:'◷',name:'Timber value & growth',desc:'Stand growth, yield and product value made measurable, carbon derived.',
   active:[3,7,12,19,24,33,41,55,62,71,88], cycle:'monthly', save:'−87%', cov:'0.90', comp:1280,
   pipe:[['L1','Acquisition','Sentinel-2/Landsat, LiDAR inventory, growth plots, soil & climate ERA5','batch'],
         ['L2','Feature Fabric','Biomass indices, growth/yield, canopy structure, allometrics','11 s'],
         ['L3','11 engines','PINN biomass · GP growth · CNN canopy · allometric twin · LSTM phenology','26 s'],
         ['L4','Meta-fusion','Robustness-weighted; uncertainty propagated end-to-end','4 s'],
         ['L5','Decision Hub','Per-stand growth, value &amp; carbon with calibrated band + proof chain','5 s']],
-  out:'ML6 — three Southern clusters share the same growth-pipeline fingerprint; their value and carbon estimates move together. Treat as one block for stand-value and registry reporting, not eleven independent stands.'},
+  out:'ML6, three Southern clusters share the same growth-pipeline fingerprint; their value and carbon estimates move together. Treat as one block for stand-value and registry reporting, not eleven independent stands.'},
  {id:'risk',ic:'⚡',name:'Climate & fire risk',desc:'Early-warning across tracts, with lead time.',
   active:[1,9,17,28,36,44,77], cycle:'daily', save:'−92%', cov:'0.90', comp:760,
   pipe:[['L1','High-frequency stream','MODIS/VIIRS thermal, drought index, fuel moisture, wind','6 s'],
@@ -600,7 +604,7 @@ const OBJ=[
         ['L3','7 engines','GNN watershed · CNN fire-detection · drought PINN · LSTM weather · anomaly AE','18 s'],
         ['L4','Meta-fusion','Latency-priority profile; accuracy held within ~1pp','3 s'],
         ['L5','Decision Hub','Tract risk with stated lead time + explainable rationale','4 s']],
-  out:'ML7 — drift detected on the fire-risk pipeline ahead of the dry season; the active subset is being re-composed and a successor model pre-warmed. Mean lead time on regime change: ~7–9 days.'},
+  out:'ML7, drift detected on the fire-risk pipeline ahead of the dry season; the active subset is being re-composed and a successor model pre-warmed. Mean lead time on regime change: ~7–9 days.'},
  {id:'returns',ic:'◆',name:'LP-return confidence',desc:'Risk-adjusted reporting an investment committee trusts.',
   active:[4,11,22,30,38,46,58,66,74,82,84,89], cycle:'quarterly', save:'−84%', cov:'0.90', comp:2040,
   pipe:[['L1','Portfolio acquisition','Inventory, market prices, harvest schedule, monetisation streams','batch'],
@@ -608,7 +612,7 @@ const OBJ=[
         ['L3','12 engines','Yield twin · price transformer · Bayesian scoring · scenario MC · GBoost','2.4 h'],
         ['L4','Meta-fusion','Conservative profile; uncertainty explicit on every figure','14 min'],
         ['L5','Decision Hub','Portfolio report with calibrated bands, Whole-Forest streams','18 min']],
-  out:'ML6 — a newly acquired tract inherits the winning configuration from its 3 nearest fingerprint-neighbours: it starts at an illustrative warm-start score near 85% of the target baseline, not zero. Design cycles reduced >10×.'},
+  out:'ML6, a newly acquired tract inherits the winning configuration from its 3 nearest fingerprint-neighbours: it starts at an illustrative warm-start score near 85% of the target baseline, not zero. Design cycles reduced >10×.'},
  {id:'tnfd',ic:'⌑',name:'TNFD / Art.9 disclosure',desc:'Defensible nature reporting, compiled from proof.',
   active:[3,7,12,24,33,41,55,62,71,88,46,58], cycle:'reporting', save:'−85%', cov:'0.90', comp:1860,
   pipe:[['L1','Complete acquisition','Carbon, biodiversity, water, certification, conservation records','batch'],
@@ -616,22 +620,24 @@ const OBJ=[
         ['L3','12 engines','Carbon measure · biodiversity index · habitat GNN · scenario · LLM drafter','2.1 h'],
         ['L4','Meta-fusion','Maximum robustness; explicit uncertainty for filing','12 min'],
         ['L5','Decision Hub','TNFD-LEAP + SFDR Art.9 package + filing signature','section 05']],
-  out:'Meta-Layer — every disclosed figure carries the engine subset that produced it and its conformal band: the report is defensible line by line, not a narrative. Generate it in section 05.'}
+  out:'Meta-Layer, every disclosed figure carries the engine subset that produced it and its conformal band: the report is defensible line by line, not a narrative. Generate it in section 05.'}
 ];
 const grid=document.getElementById('engGrid'); const engEls=[];
 for(let i=0;i<90;i++){const d=document.createElement('div');d.className='eng';grid.appendChild(d);engEls.push(d);}
 const tabs=document.getElementById('objTabs');
 OBJ.forEach((o,i)=>{const b=document.createElement('button');b.className='obj'+(i===0?' sel':'');b.innerHTML=`<div class="ic">${o.ic}</div><h4>${o.name}</h4><p>${o.desc}</p>`;b.onclick=()=>setObj(i);tabs.appendChild(b);});
+const mnObj=document.getElementById("mnObj");if(mnObj){OBJ.forEach((o,i)=>{const b=document.createElement("button");b.className="mn-ob"+(i===0?" sel":"");b.innerHTML=o.ic+" "+o.name;b.onclick=()=>setObj(i);mnObj.appendChild(b);});}
 function aCount(el,t){const t0=performance.now(),from=parseFloat(el.dataset._v||0);const tk=tm=>{const p=Math.min(1,(tm-t0)/650),e=1-Math.pow(1-p,3),v=Math.round(from+(t-from)*e);el.textContent=v;if(p<1)requestAnimationFrame(tk);else el.dataset._v=t;};requestAnimationFrame(tk);}
 function setObj(i){const o=OBJ[i];
   document.querySelectorAll('.obj').forEach((t,j)=>t.classList.toggle('sel',j===i));
+  document.querySelectorAll('.mn-ob').forEach((t,j)=>t.classList.toggle('sel',j===i));
   const act=new Set(o.active);
   engEls.forEach((e,j)=>{e.className='eng'+(act.has(j)?(' on '+(ENGN[j]||'')):'');});
   aCount(document.getElementById('gActive'),o.active.length);
   document.getElementById('mCycle').textContent=o.cycle;
   document.getElementById('mSave').textContent=o.save;
   document.getElementById('mCov').textContent=o.cov;
-  document.getElementById('autogen').innerHTML=`<b>L4-bis</b> evaluated <b>${o.comp.toLocaleString('en-US')}</b> valid pipeline compositions, scored each, and runs only the optimal subset — re-composed for this objective, not rewritten.`;
+  document.getElementById('autogen').innerHTML=`<b>L4-bis</b> evaluated <b>${o.comp.toLocaleString('en-US')}</b> valid pipeline compositions, scored each, and runs only the optimal subset, re-composed for this objective, not rewritten.`;
   document.getElementById('pipeBody').innerHTML=o.pipe.map(p=>`<div class="pl"><span class="lv">${p[0]}</span><div class="px"><b>${p[1]}</b><span>${p[2]}</span></div></div>`).join('');
   document.getElementById('rwOut').textContent=o.out;
   if(window.mnSet) mnSet(o.id, o.name, o.active.length);
@@ -689,13 +695,13 @@ if(mnCanvas){
 /* ===== META-LAYER CARDS ===== */
 const MI=[
  {tag:'ML6 · fingerprint',h:'Hidden concentration risk',
-  p:'Three tracts in different states — Georgia, Alabama, Mississippi — share the same winning pipeline fingerprint: the identical small set of models wins on all three. The Meta-Layer flags them as a correlated cluster. A single drought event would hit them together. No tract-level model sees this; the structure of which models win does.',
+  p:'Three tracts in different states, Georgia, Alabama, Mississippi, share the same winning pipeline fingerprint: the identical small set of models wins on all three. The Meta-Layer flags them as a correlated cluster. A single drought event would hit them together. No tract-level model sees this; the structure of which models win does.',
   src:'Produced by: <b>11-engine growth subset</b> · fingerprint Jaccard 0.91 across the three',c:88,key:'concentration'},
  {tag:'ML7 · meta-pattern',h:'It predicts its own drift',
-  p:'The optimal pipeline for stand-growth estimation is drifting: within ~9 days the current best model will be outperformed by a regime change in growth signal. The system pre-warms its successor and re-composes before accuracy degrades — the intelligence anticipates its own obsolescence, and logs it.',
+  p:'The optimal pipeline for stand-growth estimation is drifting: within ~9 days the current best model will be outperformed by a regime change in growth signal. The system pre-warms its successor and re-composes before accuracy degrades, the intelligence anticipates its own obsolescence, and logs it.',
   src:'Produced by: <b>ML7 motif discovery</b> · mean lead time ≥ 7 days · drift trigger logged',c:84,key:'drift'},
  {tag:'ML6 · transfer',h:'New acres start smart',
-  p:'A newly acquired tract inherits the winning configuration from its three nearest fingerprint-neighbours by cosine similarity. It starts at an illustrative warm-start score near 85% of the target orchestration baseline instead of from zero — design cycles reduced more than tenfold. Intelligence transfers across the portfolio; each new acquisition is measured at a fraction of the cost.',
+  p:'A newly acquired tract inherits the winning configuration from its three nearest fingerprint-neighbours by cosine similarity. It starts at an illustrative warm-start score near 85% of the target orchestration baseline instead of from zero, design cycles reduced more than tenfold. Intelligence transfers across the portfolio; each new acquisition is measured at a fraction of the cost.',
   src:'Produced by: <b>cross-asset warm-start</b> · hit-rate ≥ 0.85 · onboarding 10× faster',c:90,key:'transfer'}
 ];
 const miG=document.getElementById('miGrid');
@@ -734,7 +740,7 @@ function generateDisclosure(){
   steps.forEach((el,i)=>setTimeout(()=>{el.classList.add('on');el.querySelector('.h').textContent='sha256:'+H('LEAP'+i+Date.now());},i*420));
   setTimeout(()=>{const sig=document.getElementById('genSig');sig.classList.add('on');
     let p='genesis';['L','E','A','P'].forEach(k=>p=SHA256(p+k).slice(0,16));
-    sig.innerHTML=`<b>Disclosure compiled.</b> TNFD-LEAP + SFDR Article 9 package assembled from the proof chain — every metric traceable to raw data, with calibrated uncertainty. <br>Filing signature: <span class="h">sha256:${SHA256(p+'TIR-Fund2-Art9').slice(0,48)}</span> · tamper-evident, timestamp-ready. <span class="bdg sim">simulated from origin</span>`;
+    sig.innerHTML=`<b>Disclosure compiled.</b> TNFD-LEAP + SFDR Article 9 package assembled from the proof chain, every metric traceable to raw data, with calibrated uncertainty. <br>Filing signature: <span class="h">sha256:${SHA256(p+'TIR-Fund2-Art9').slice(0,48)}</span> · tamper-evident, timestamp-ready. <span class="bdg sim">simulated from origin</span>`;
   },steps.length*420+200);
   document.getElementById('genBtn').textContent='✓ Generated';
 }
@@ -824,7 +830,7 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw
       const a=n.th+t*n.om,ct=Math.cos(n.tilt),st=Math.sin(n.tilt);
       let bx=Math.cos(a)*rr,by=n.off*R,bz=Math.sin(a)*rr;
       const pj=project([bx,by*ct-bz*st,by*st+bz*ct]);pj.bp=bp;return pj;});
-    // dormant substrate (dense, faint) — ignites densely under the cursor
+    // dormant substrate (dense, faint), ignites densely under the cursor
     const dp=dorm.map(n=>{const rr=n.r*R;return project([n.d[0]*rr,n.d[1]*rr,n.d[2]*rr]);});
     const cf=R*0.42;
     for(let i=0;i<dorm.length;i++){const n=dorm[i],p=dp[i];const dN=Math.max(0,Math.min(1,(p.sc-0.6)/1.1));
