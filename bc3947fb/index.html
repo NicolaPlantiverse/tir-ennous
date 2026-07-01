@@ -222,6 +222,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   linear-gradient(180deg, rgba(4,6,10,.4) 0%, transparent 26% 74%, rgba(4,6,10,.9) 100%)}
 #hero{max-width:none!important;padding-left:0!important;padding-right:0!important}#hero .hero-inner{max-width:1200px;margin:0 auto;padding:0 30px;pointer-events:none}
 /*ISLANDS*/html{scroll-snap-type:y mandatory}section{min-height:100vh;scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;justify-content:safe center;padding-top:92px;padding-bottom:56px}#hero{padding-top:96px}@media(max-width:820px){html{scroll-snap-type:none}section{min-height:auto;display:block;padding-top:80px}}
+/*PROBLEM*/#problem .qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;margin-top:40px}#problem .q{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 19px;transition:border-color .25s,box-shadow .25s,transform .25s;min-height:104px;display:flex;flex-direction:column;cursor:pointer;position:relative}#problem .q:hover{border-color:var(--forest);transform:translateY(-3px);box-shadow:0 0 0 1px var(--forest),0 0 28px -8px var(--forest)}#problem .q:focus-visible{outline:2px solid var(--forest);outline-offset:3px}#problem .q .qn{font-size:12px;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums;margin-bottom:12px;letter-spacing:.1em}#problem .q p{font-size:15px;color:var(--txt);line-height:1.32;font-weight:600;letter-spacing:-.01em;margin:0}#problem .q span{display:block;font-size:12.5px;color:var(--txt2);line-height:1.55;font-weight:400;max-height:0;opacity:0;overflow:hidden;margin-top:0;transition:max-height .45s cubic-bezier(.2,.6,.2,1),opacity .35s,margin-top .35s}#problem .q.open span{max-height:320px;opacity:1;margin-top:11px}#problem .q::after{content:"+";position:absolute;top:22px;right:16px;color:var(--forest);font-size:17px;line-height:1;pointer-events:none}#problem .q.open::after{content:"–"}#problem .turn{margin-top:26px;font-size:15px;color:var(--txt2);max-width:780px;line-height:1.6}#problem .turn b{color:var(--forest)}@media(max-width:900px){#problem .qgrid{grid-template-columns:1fr 1fr}}@media(max-width:560px){#problem .qgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -250,6 +251,21 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <p class="lead sub rv d2" style="margin-top:22px;max-width:600px">Estimates become measures — the Whole-Forest, calibrated and proven per stand.</p>
   <div class="scroll-hint rv d3">Explore</div>
   </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section id="problem">
+  <div class="kicker rv">The problem</div>
+  <h2 class="rv d1">Five questions decide the value.<br>Few can be answered with proof.</h2>
+  <p class="lead rv d2">For a working-forest portfolio, value increasingly follows the quality of its proof. These are the questions that decide it — and that an inventory table, a framework still maturing, or a single model struggle to answer with calibrated confidence.</p>
+  <div class="qgrid rv d2">
+    <div class="q"><div class="qn">Q1</div><p>Which stand, which product, when?</p><span>As stands mature from pulpwood to sawtimber, harvest timing and product mix drive the return. Is each decision a measured, per-stand number with uncertainty — or an inventory-table estimate?</span></div>
+    <div class="q"><div class="qn">Q2</div><p>A measure, or an estimate?</p><span>Carbon today is a Winrock estimate; the Winged Biodiversity™ Measuring &amp; Monitoring pillar is still maturing. For a fund aligned to TNFD, can each be rendered a verifiable measure with provenance?</span></div>
+    <div class="q"><div class="qn">Q3</div><p>Do the tracts speak one language?</p><span>841,000 acres across 15 states, each tract in its own silo — inventory, GIS, certification records. Can they be compared on one grammar: value, unit, provenance, uncertainty, time?</span></div>
+    <div class="q"><div class="qn">Q4</div><p>How early is the risk?</p><span>Wildfire and insect exposure sit under 1% today. But early-warning with lead time, per tract, before it reaches value — measured, not assumed?</span></div>
+    <div class="q"><div class="qn">Q5</div><p>Would it survive a retrace?</p><span>Every figure in a valuation or a disclosure — would it survive a third party retracing it end to end, without privileged access?</span></div>
+  </div>
+  <p class="turn rv d3">Ennous is built to answer each one <b>by construction</b> — it composes the right analysis, opens the reasoning, quantifies uncertainty, and leaves a proof. Not another AI tool: a measurement layer.</p>
 </section>
 
 <!-- OVERVIEW -->
@@ -879,5 +895,6 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw
   resize(); build(); requestAnimationFrame(frame);
 })();
 </script>
+<script>(function(){document.querySelectorAll("#problem .q").forEach(function(c){c.setAttribute("tabindex","0");c.setAttribute("role","button");c.setAttribute("aria-expanded","false");function t(){var o=c.classList.toggle("open");c.setAttribute("aria-expanded",o?"true":"false");}c.addEventListener("click",t);c.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();t();}});});})();</script>
 </body>
 </html>
