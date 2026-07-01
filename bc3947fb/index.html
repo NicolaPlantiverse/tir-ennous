@@ -236,6 +236,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
 /*ARP-MAP*/.tchips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}.tchip{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-size:11.5px;color:var(--txt2);cursor:pointer;font-family:inherit;transition:border-color .2s,color .2s,box-shadow .2s}.tchip:hover{border-color:var(--line2);color:var(--txt)}.tstatus{display:inline-block;font-size:11px;border:1px solid;border-radius:999px;padding:5px 12px;margin-top:12px}.tspark-wrap{margin:14px 0 2px}.tspark-wrap canvas{width:100%;height:70px;display:block}.tsl{display:flex;justify-content:space-between;font-size:10.5px;color:var(--txt3);margin-top:6px}.map-panel,.tract-card{position:relative;overflow:hidden}.map-panel::before,.tract-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;transform:translateX(-100%);animation:miScan 4.6s ease-in-out infinite;pointer-events:none;z-index:3}.map-panel::before{background:linear-gradient(90deg,transparent,var(--forest),transparent)}.tract-card::before{background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation-delay:2.3s}
 /*GHOST*/.cta-ghost{background:transparent;color:var(--forest);border:1px solid var(--forest)}.cta-ghost:hover{background:rgba(63,174,106,.08);box-shadow:0 0 22px -10px var(--forest)}
 /*SIMULATOR*/.sim-scen{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}.sim-chip{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:12px 18px;font-size:13px;color:var(--txt2);cursor:pointer;font-family:inherit;transition:border-color .2s,color .2s,box-shadow .2s,transform .2s}.sim-chip .sc-ic{color:var(--txt3);margin-right:2px}.sim-chip:hover{border-color:var(--line2);color:var(--txt);transform:translateY(-2px)}.sim-chip.sel{border-color:var(--forest);color:var(--forest);box-shadow:0 0 0 1px var(--forest),0 0 24px -8px var(--forest)}.sim-chip.sel .sc-ic{color:var(--forest)}.sim-out{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:30px;position:relative;overflow:hidden}.sim-out::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--forest),transparent);transform:translateX(-100%);animation:miScan 4.4s ease-in-out infinite}.so-lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);font-weight:700;margin-bottom:9px}.so-rec{font-size:20px;color:var(--txt);line-height:1.35;font-weight:600;letter-spacing:-.01em;margin:0}.so-metrics{display:flex;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:22px 0}.som{flex:1;background:var(--bg2);padding:16px;text-align:center}.som .sv{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}.som .sk{font-size:10px;color:var(--txt3);letter-spacing:.06em;text-transform:uppercase;margin-top:4px}.so-driver{font-size:12.5px;color:var(--txt2);line-height:1.55}.so-driver b{color:var(--txt)}
+/*QLASER*/@property --qa{syntax:"<angle>";inherits:false;initial-value:0deg}#problem .q::before{display:none!important}#problem .qgrid{position:relative}#problem .qgrid::after{content:"";position:absolute;inset:-2px;border-radius:20px;padding:1.5px;background:conic-gradient(from var(--qa),transparent 0deg,transparent 296deg,rgba(63,174,106,.5) 330deg,#eafff2 350deg,rgba(63,174,106,.5) 360deg);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:qspin 7s linear infinite;pointer-events:none;z-index:2}@keyframes qspin{to{--qa:360deg}}/*NAVFIX*/nav .links a{color:rgba(255,255,255,.86)!important;font-weight:500!important}nav .links a:hover{color:#fff!important}
 </style>
 </head>
 <body>
@@ -854,7 +855,7 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw
     eng+=((mx>-9999?1:0)-eng)*0.05;
     if(t>2.2 && t-lastGate>2.6 && hover<0) gate(-1);
     for(const n of inner){if(t<2.0)n.litT=1;n.lit+=(n.litT-n.lit)*0.06;}
-    for(const n of dorm){if(rand()<0.0018)n.litT=0.5+rand()*0.4;n.litT*=0.95;n.lit+=(n.litT-n.lit)*0.12;}
+    for(const n of dorm){if(rand()<0.0010)n.litT=0.45+rand()*0.35;n.litT*=0.95;n.lit+=(n.litT-n.lit)*0.12;}
     if(t>2.5&&t-lastMGate>1.6){lastMGate=t;for(const n of meta)n.litT=rand()<0.55?1:0.18;}
     for(const n of meta){if(rand()<0.016)n.litT=rand()<0.5?1:0.2;n.lit+=(n.litT-n.lit)*0.1;}
 
@@ -868,10 +869,10 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw
       const pj=project([bx,by*ct-bz*st,by*st+bz*ct]);pj.bp=bp;return pj;});
     // dormant substrate (dense, faint), ignites densely under the cursor
     const dp=dorm.map(n=>{const rr=n.r*R;return project([n.d[0]*rr,n.d[1]*rr,n.d[2]*rr]);});
-    const cf=R*0.42;
+    const cf=R*0.24;
     for(let i=0;i<dorm.length;i++){const n=dorm[i],p=dp[i];const dN=Math.max(0,Math.min(1,(p.sc-0.6)/1.1));
       let el=n.lit;
-      if(mx>-9999){const cdx=p.sx-mx,cdy=p.sy-my,cd2=cdx*cdx+cdy*cdy;if(cd2<cf*cf){const pr=1-Math.sqrt(cd2)/cf;el=Math.max(el,pr);}}
+      if(mx>-9999){const cdx=p.sx-mx,cdy=p.sy-my,cd2=cdx*cdx+cdy*cdy;if(cd2<cf*cf){const pr=1-Math.sqrt(cd2)/cf;el=Math.max(el,pr*0.72);}}
       const core=p.sc*(0.6+el*el*3.0);
       if(el>0.12){const g=ctx.createRadialGradient(p.sx,p.sy,0,p.sx,p.sy,core*3.4);g.addColorStop(0,rgba(n.col,Math.min(0.5*el,0.6)));g.addColorStop(1,rgba(n.col,0));ctx.fillStyle=g;ctx.beginPath();ctx.arc(p.sx,p.sy,core*3.4,0,6.2832);ctx.fill();}
       if(el>0.4&&p.sc>0.6){const ir=core*2.5,sp=n.sat;
