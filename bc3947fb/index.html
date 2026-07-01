@@ -226,6 +226,9 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
 .cta-row{display:flex;align-items:center;gap:18px;margin-top:22px;flex-wrap:wrap}.cta{display:inline-block;background:var(--forest);color:#04130a;font-weight:700;font-size:13px;letter-spacing:.04em;padding:13px 22px;border-radius:11px;text-decoration:none;transition:transform .2s,box-shadow .2s}.cta:hover{transform:translateY(-2px);box-shadow:0 12px 32px -12px var(--forest)}.cta-note{font-size:12px;color:var(--txt3);max-width:340px;line-height:1.5}
 /*RW-AMAZING*/@keyframes engPulse{0%,100%{filter:brightness(1)}50%{filter:brightness(1.55)}}.eng.on{animation:engPulse 1.9s ease-in-out infinite}#reasoning .obj{transition:border-color .25s,box-shadow .25s,transform .25s}#reasoning .obj:hover{border-color:var(--forest);transform:translateY(-2px);box-shadow:0 0 0 1px var(--forest),0 0 26px -8px var(--forest)}#reasoning .obj.sel{box-shadow:0 0 0 1px var(--forest),0 0 32px -10px var(--forest)}.rwm .v{text-shadow:0 0 22px currentColor}.rw-panel{transition:box-shadow .3s,border-color .3s}.rw-panel:hover{border-color:var(--line2);box-shadow:0 0 34px -16px rgba(120,210,170,.6)}.pl .lv{transition:box-shadow .3s}.pl:hover .lv{box-shadow:0 0 16px -4px var(--forest)}
 /*HERO-REVEAL*/#hero .rv{transition-duration:1.15s!important}#hero .hero-brand.rv{transition-delay:.35s}#hero .kicker.rv{transition-delay:1.25s;font-size:15px;letter-spacing:.28em;margin-bottom:22px}#hero h1.rv{transition-delay:2.25s}#hero .sub.rv{transition-delay:3.75s}#hero .scroll-hint.rv{transition-delay:5.1s}
+/*ML-AMAZING*/.mi{position:relative;overflow:hidden;transition:border-color .25s,box-shadow .25s,transform .25s}.mi::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--violet),transparent);transform:translateX(-100%);animation:miScan 4.2s ease-in-out infinite}@keyframes miScan{0%{transform:translateX(-100%)}55%,100%{transform:translateX(100%)}}.mi:nth-child(2)::before{background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation-delay:1.3s}.mi:nth-child(3)::before{background:linear-gradient(90deg,transparent,var(--forest),transparent);animation-delay:2.6s}.mi:hover{border-color:var(--line2);transform:translateY(-4px);box-shadow:0 0 0 1px var(--line2),0 0 34px -10px rgba(155,127,212,.55)}.mi .conf .c b{text-shadow:0 0 18px currentColor}.proof-btn{transition:border-color .2s,box-shadow .2s,color .2s}.proof-btn:hover{border-color:var(--forest);box-shadow:0 0 20px -6px var(--forest);color:var(--forest)}
+/*MEAS-DISC-AMAZING*/.em{position:relative;transition:border-color .25s,box-shadow .25s,transform .25s}.em:hover{border-color:var(--forest);transform:translateY(-3px);box-shadow:0 0 0 1px var(--forest),0 0 30px -10px var(--forest)}.em .after{text-shadow:0 0 20px rgba(63,174,106,.55)}.em .arrow{animation:emArrow 2.2s ease-in-out infinite}@keyframes emArrow{0%,100%{opacity:.55;transform:translateY(0)}50%{opacity:1;transform:translateY(3px)}}.gen-btn{transition:box-shadow .25s,transform .2s}.gen-btn:hover{box-shadow:0 0 26px -8px var(--forest);transform:translateY(-2px)}.gen-wrap{transition:box-shadow .3s,border-color .3s}.gen-wrap:hover{border-color:var(--line2);box-shadow:0 0 34px -16px rgba(63,174,106,.5)}.leap .h{text-shadow:0 0 14px rgba(76,195,217,.5)}
+/*BATCH1*/.endcap h3{font-size:clamp(21px,2.5vw,30px)}.endcap p{font-size:15.5px;line-height:1.66}.endcap{transition:box-shadow .3s}.endcap:hover{box-shadow:0 0 44px -20px rgba(63,174,106,.55)}.hstat{padding:28px 22px;transition:transform .25s,box-shadow .25s,background .25s}.hstat .n{font-size:34px}.hstat .l{font-size:12.5px;color:var(--txt2);line-height:1.5}.hstat:hover{transform:scale(1.045);background:var(--bg2);box-shadow:0 0 34px -10px rgba(120,210,170,.55);position:relative;z-index:2}.disc{font-size:12.5px}.gen-wrap.done{border-color:var(--forest)!important;box-shadow:0 0 0 1px var(--forest),0 0 54px -16px var(--forest)}
 </style>
 </head>
 <body>
@@ -356,7 +359,13 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
       <div class="rw-out"><div class="ml">Meta-Layer · ML6/ML7</div><p id="rwOut"></p></div>
     </div>
   </div>
-  <div class="metanet rv d3">
+</section>
+
+<!-- META-NET -->
+<section id="metanet">
+  <div class="kicker rv">02b · The meta-net</div>
+  <h2 class="rv d1">Every node is a network.</h2>
+  <div class="metanet rv d2">
     <div class="mh"><span class="t">Meta-net · every node is a network</span><span class="c" id="mnLabel"></span></div>
     <canvas id="mnCanvas"></canvas>
     <div class="mn-tip" id="mnTip"></div>
@@ -466,10 +475,10 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
     </div>
   </div>
   <div class="endcap rv d3">
-    <h3>TIR · Ennous Lab — a holographic slice first, then the whole book.</h3>
-    <p>Ennous governs a network of intelligences: the value is <strong>holistic</strong> — the meta-layer surfaces portfolio-level truth that no single measure, and no single tool, can reach. So it is never a token pilot on one node. It begins on the <strong>smallest representative slice</strong> of the book — a varied, cross-regional sample of acres and investments that still reflects the whole — and the full governing layer runs on it: many intelligences, mapping the assets end to end. A hologram of the portfolio, governed in miniature.</p>
-    <p>Because the part reflects the whole, the governance is real from day one — not a demo. As TIR sees it work, it extends to larger portions, then the full 841,000 acres and across the funds. Built on TIR's own data and methods, with an <strong>evidence gate at each step</strong>, evolving to a standing capability or a joint venture. The question is not cost; it is whether <strong class="gr">every number, across the whole portfolio, becomes measured, governed and provable.</strong></p>
-    <div class="cta-row"><a class="cta" href="mailto:info@ecobubble.it?subject=TIR%20%C2%B7%20Ennous%20Lab%20%E2%80%94%20holographic%20slice">Scope the first slice &rarr;</a><span class="cta-note">A holographic sample of your book, governed end to end — then extended as the evidence lands.</span></div>
+    <h3>TIR · Ennous Lab</h3>
+    <p>Ennous is a governing intelligence over many models. Its value is <strong>holistic</strong>: the meta-layer reads patterns across the portfolio that no single measure, and no single tool, can. So a first engagement is not one model on one tract. It runs the full governing layer on a small, <strong>representative sample</strong> of the book: a varied, cross-regional set of acres and investments that still reflects the whole. A hologram of the portfolio, governed in miniature.</p>
+    <p>Because the part reflects the whole, the governance is real on day one, on TIR's own data, with an <strong>evidence gate at every step</strong>. Should it prove its value there, the same layer could extend to larger portions, to the full 841,000 acres, and across the funds, as a standing capability or a joint venture. <strong class="gr">The measure of success is simple: whether every number in the book becomes measured, governed and provable.</strong></p>
+    <div class="cta-row"><a class="cta" href="mailto:info@ecobubble.it?subject=TIR%20%C2%B7%20Ennous%20Lab%20%E2%80%94%20holographic%20slice">Scope a representative sample &rarr;</a><span class="cta-note">Built on your data, governed end to end, with an evidence gate at each step.</span></div>
   </div>
 </section>
 
@@ -910,5 +919,6 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw
 })();
 </script>
 <script>(function(){document.querySelectorAll("#problem .q").forEach(function(c){c.setAttribute("tabindex","0");c.setAttribute("role","button");c.setAttribute("aria-expanded","false");function t(){var o=c.classList.toggle("open");c.setAttribute("aria-expanded",o?"true":"false");}c.addEventListener("click",t);c.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();t();}});});})();</script>
+<script>(function(){var o=window.generateDisclosure;if(o)window.generateDisclosure=function(){o.apply(this,arguments);var w=document.querySelector(".gen-wrap");if(w)w.classList.add("done");};})();</script>
 </body>
 </html>
