@@ -234,6 +234,8 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
 /*BEAM-ALL*/.q,.em,.hstat,.obj{position:relative;overflow:hidden}.q::before,.em::before,.hstat::before,.obj::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--forest),transparent);transform:translateX(-100%);animation:miScan 4.4s ease-in-out infinite;pointer-events:none;opacity:.85;z-index:1}.q:nth-child(2)::before,.em:nth-child(2)::before,.obj:nth-child(2)::before,.hstat:nth-child(2)::before{background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation-delay:1.1s}.q:nth-child(3)::before,.obj:nth-child(3)::before,.hstat:nth-child(3)::before{background:linear-gradient(90deg,transparent,var(--gold),transparent);animation-delay:2.2s}.q:nth-child(4)::before,.obj:nth-child(4)::before,.hstat:nth-child(4)::before{background:linear-gradient(90deg,transparent,var(--violet),transparent);animation-delay:3.3s}.hstat:nth-child(5)::before,.q:nth-child(5)::before{background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation-delay:1.7s}.hstat:nth-child(6)::before{background:linear-gradient(90deg,transparent,var(--forest),transparent);animation-delay:2.8s}.map-panel{transition:border-color .25s,box-shadow .25s}.map-panel:hover{border-color:var(--forest);box-shadow:0 0 44px -16px rgba(63,174,106,.55)}.tract-card{transition:border-color .25s,box-shadow .25s}.tract-card:hover{border-color:var(--forest);box-shadow:0 0 34px -12px var(--forest)}footer{scroll-snap-align:start;scroll-snap-stop:always;min-height:auto}
 /*ROADMAP*/.roadmap-track{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:46px;margin-bottom:8px;position:relative}.roadmap-track::before{content:"";position:absolute;top:19px;left:5%;right:5%;height:2px;background:linear-gradient(90deg,var(--forest),var(--cyan),var(--gold),var(--violet));opacity:.38}.roadmap-track::after{content:"";position:absolute;top:15px;left:5%;width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 12px 2px rgba(255,255,255,.8);animation:rmPart 6.5s linear infinite}@keyframes rmPart{0%{left:5%;opacity:0}12%{opacity:1}88%{opacity:1}100%{left:94%;opacity:0}}.rphase{position:relative;padding-top:54px}.rp-n{position:absolute;top:0;left:0;width:40px;height:40px;border-radius:50%;background:var(--bg2);border:1px solid var(--forest);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:var(--forest);box-shadow:0 0 22px -6px var(--forest)}.rphase:nth-child(2) .rp-n{border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 22px -6px var(--cyan)}.rphase:nth-child(3) .rp-n{border-color:var(--gold);color:var(--gold);box-shadow:0 0 22px -6px var(--gold)}.rphase:nth-child(4) .rp-n{border-color:var(--violet);color:var(--violet);box-shadow:0 0 22px -6px var(--violet)}.rp-t{font-size:14.5px;font-weight:700;color:var(--txt);margin-bottom:7px}.rp-d{font-size:12.5px;color:var(--txt2);line-height:1.55}.rp-when{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt3);margin-top:10px}@media(max-width:820px){.roadmap-track{grid-template-columns:1fr 1fr}.roadmap-track::before,.roadmap-track::after{display:none}}
 /*ARP-MAP*/.tchips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}.tchip{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-size:11.5px;color:var(--txt2);cursor:pointer;font-family:inherit;transition:border-color .2s,color .2s,box-shadow .2s}.tchip:hover{border-color:var(--line2);color:var(--txt)}.tstatus{display:inline-block;font-size:11px;border:1px solid;border-radius:999px;padding:5px 12px;margin-top:12px}.tspark-wrap{margin:14px 0 2px}.tspark-wrap canvas{width:100%;height:70px;display:block}.tsl{display:flex;justify-content:space-between;font-size:10.5px;color:var(--txt3);margin-top:6px}.map-panel,.tract-card{position:relative;overflow:hidden}.map-panel::before,.tract-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;transform:translateX(-100%);animation:miScan 4.6s ease-in-out infinite;pointer-events:none;z-index:3}.map-panel::before{background:linear-gradient(90deg,transparent,var(--forest),transparent)}.tract-card::before{background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation-delay:2.3s}
+/*GHOST*/.cta-ghost{background:transparent;color:var(--forest);border:1px solid var(--forest)}.cta-ghost:hover{background:rgba(63,174,106,.08);box-shadow:0 0 22px -10px var(--forest)}
+/*SIMULATOR*/.sim-scen{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}.sim-chip{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:12px 18px;font-size:13px;color:var(--txt2);cursor:pointer;font-family:inherit;transition:border-color .2s,color .2s,box-shadow .2s,transform .2s}.sim-chip .sc-ic{color:var(--txt3);margin-right:2px}.sim-chip:hover{border-color:var(--line2);color:var(--txt);transform:translateY(-2px)}.sim-chip.sel{border-color:var(--forest);color:var(--forest);box-shadow:0 0 0 1px var(--forest),0 0 24px -8px var(--forest)}.sim-chip.sel .sc-ic{color:var(--forest)}.sim-out{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:30px;position:relative;overflow:hidden}.sim-out::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--forest),transparent);transform:translateX(-100%);animation:miScan 4.4s ease-in-out infinite}.so-lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);font-weight:700;margin-bottom:9px}.so-rec{font-size:20px;color:var(--txt);line-height:1.35;font-weight:600;letter-spacing:-.01em;margin:0}.so-metrics{display:flex;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:22px 0}.som{flex:1;background:var(--bg2);padding:16px;text-align:center}.som .sv{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}.som .sk{font-size:10px;color:var(--txt3);letter-spacing:.06em;text-transform:uppercase;margin-top:4px}.so-driver{font-size:12.5px;color:var(--txt2);line-height:1.55}.so-driver b{color:var(--txt)}
 </style>
 </head>
 <body>
@@ -258,7 +260,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
   <div class="hero-inner">
   <div class="hero-brand rv">TIR · ENNOUS LAB</div>
   <div class="kicker rv d1">Meta-Intelligence</div>
-  <h1 class="rv d1">841,000 acres.<br>One measured intelligence.</h1>
+  <h1 class="rv d1">841,000 acres.<br>One governing intelligence.</h1>
   <p class="lead sub rv d2" style="margin-top:22px;max-width:600px">Estimates become measures, the Whole-Forest, calibrated and proven per stand.</p>
   <a href="#problem" class="scroll-hint rv d3">Explore</a>
   </div>
@@ -392,6 +394,15 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
 </section>
 
 <!-- META-LAYER -->
+<!-- DECISION SIMULATOR -->
+<section id="simulator">
+  <div class="kicker rv">02c · Decision Simulator</div>
+  <h2 class="rv d1">One engine. Many forests.</h2>
+  <p class="lead rv d2">The forest changes, the engine recomposes, and the recommendation changes with it. The confidence stays measured. Pick a condition.</p>
+  <div class="sim-scen rv d2" id="simScen"></div>
+  <div class="sim-out rv d3" id="simOut"></div>
+</section>
+
 <section id="metalayer">
   <div class="kicker rv">03 · The Meta-Layer speaks</div>
   <h2 class="rv d1">Conclusions no single model, and no human query, could reach.</h2>
@@ -499,7 +510,7 @@ footer .sig{font-size:11px;color:var(--txt2);text-align:right;line-height:1.7}
     <h3>TIR · Ennous Lab</h3>
     <p>Ennous is a governing intelligence over many models. Its value is <strong>holistic</strong>: the meta-layer reads patterns across the portfolio that no single measure, and no single tool, can. So a first engagement is not one model on one tract. It runs the full governing layer on a small, <strong>representative sample</strong> of the book: a varied, cross-regional set of acres and investments that still reflects the whole. A hologram of the portfolio, governed in miniature.</p>
     <p>Because the part reflects the whole, the governance is real on day one, on TIR's own data, with an <strong>evidence gate at every step</strong>. Should it prove its value there, the same layer could extend to larger portions, to the full 841,000 acres, and across the funds, as a standing capability or a joint venture. <strong class="gr">The measure of success is simple: whether every number in the book becomes measured, governed and provable.</strong></p>
-    <div class="cta-row"><a class="cta" href="mailto:info@ecobubble.it?subject=TIR%20%C2%B7%20Ennous%20Lab%20%E2%80%94%20holographic%20slice">Choose the first sub-parcel, together &rarr;</a><span class="cta-note">Co-selected with your foresters. Six months, one representative sub-parcel, every issue of the whole, decided on evidence.</span></div>
+    <div class="cta-row"><a class="cta" href="mailto:info@ecobubble.it?subject=TIR%20%C2%B7%20Ennous%20Lab%20%E2%80%94%20holographic%20slice">Choose the first sub-parcel, together &rarr;</a><a class="cta cta-ghost" href="https://calendly.com/nicola-nescatelli/30min">Book a call</a><span class="cta-note">Co-selected with your foresters. Six months, one representative sub-parcel, every issue of the whole, decided on evidence.</span></div>
   </div>
 </section>
 
@@ -951,5 +962,21 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw
 </script>
 <script>(function(){document.querySelectorAll("#problem .q").forEach(function(c){c.setAttribute("tabindex","0");c.setAttribute("role","button");c.setAttribute("aria-expanded","false");function t(){var o=c.classList.toggle("open");c.setAttribute("aria-expanded",o?"true":"false");}c.addEventListener("click",t);c.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();t();}});});})();</script>
 <script>(function(){var o=window.generateDisclosure;if(o)window.generateDisclosure=function(){o.apply(this,arguments);var w=document.querySelector(".gen-wrap");if(w)w.classList.add("done");};})();</script>
+<script>
+const SCEN=[
+ {ic:'\u2261',name:'Baseline',rec:'Hold and grow. Thin the mid-maturity stands; no harvest advanced.',conf:0.91,driver:'stand growth on trend',metric:'value +0%'},
+ {ic:'\u2600',name:'Drought year',rec:'Delay two southern harvests one season; growth signal below the band.',conf:0.88,driver:'water stress, NDWI down',metric:'value \u22123%'},
+ {ic:'\u26a1',name:'Fire-risk season',rec:'Hedge fire exposure on two tracts; pre-position salvage capacity.',conf:0.90,driver:'fuel moisture, thermal anomaly',metric:'lead-time 5\u20137 wk'},
+ {ic:'\u2197',name:'Strong sawtimber market',rec:'Accelerate the mature sawtimber cut; shift the product mix from pulp.',conf:0.89,driver:'sawtimber price regime',metric:'value +6%'},
+ {ic:'\u2726',name:'Pest pressure',rec:'Prioritise monitoring on three stands; stage an early intervention.',conf:0.87,driver:'insect exposure rising',metric:'lead-time 3\u20134 wk'}
+];
+(function(){const box=document.getElementById('simScen');if(!box)return;SCEN.forEach((sc,i)=>{const b=document.createElement('button');b.className='sim-chip';b.innerHTML='<span class="sc-ic">'+sc.ic+'</span> '+sc.name;b.onclick=()=>simSel(i);box.appendChild(b);});simSel(0);})();
+function simSel(i){const sc=SCEN[i];document.querySelectorAll('.sim-chip').forEach((c,j)=>c.classList.toggle('sel',j===i));
+ document.getElementById('simOut').innerHTML='<div class="so-lbl">Governed recommendation</div><p class="so-rec">'+sc.rec+'</p>'+
+ '<div class="so-metrics"><div class="som"><div class="sv gr">'+(sc.conf*100).toFixed(0)+'%</div><div class="sk">conformal coverage</div></div>'+
+ '<div class="som"><div class="sv">'+sc.metric+'</div><div class="sk">effect</div></div>'+
+ '<div class="som"><div class="sv cy">recomposed</div><div class="sk">pipeline</div></div></div>'+
+ '<div class="so-driver">Ignited by: <b>'+sc.driver+'</b>. One engine, a different forest, governed the same way. <span class="bdg sim">simulated from origin</span></div>';}
+</script>
 </body>
 </html>
